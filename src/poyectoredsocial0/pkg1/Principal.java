@@ -3001,7 +3001,7 @@ public class Principal extends javax.swing.JFrame {
                     int menos = Integer.parseInt(tf_minutos_evento.getText());
                     int mins = Integer.parseInt(tokens[1]);
                     int dif = mins-menos;
-                    fechahilo=fecha+"/"+tokens[0]+"-"+dif;
+                    fechahilo=fechahilo+"/"+tokens[0]+"/"+dif;
                     System.out.println("*********"+fechahilo);
                     l.agenda.add(new Evento(tf_inicio.getText(), tf_fin.getText(), fecha, tf_titulo_evento.getText(), Integer.parseInt(tf_minutos_evento.getText()),fechahilo));
                     System.out.println("agrego");
