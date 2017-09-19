@@ -41,8 +41,7 @@ public class Principal extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Principal() {
-        HiloNotificacion hn = new  HiloNotificacion(2017,9,18,21,02);
-        hn.start();
+        
         initComponents();
         
         
@@ -246,6 +245,8 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane12 = new javax.swing.JScrollPane();
         ta_notas = new javax.swing.JTextArea();
         jButton17 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        tf_hora = new javax.swing.JTextField();
         estado = new javax.swing.JDialog();
         jScrollPane10 = new javax.swing.JScrollPane();
         ta_estado = new javax.swing.JTextArea();
@@ -1504,7 +1505,12 @@ public class Principal extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton17MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton17MouseEntered(evt);
+            }
         });
+
+        jLabel10.setText("Hora");
 
         javax.swing.GroupLayout tareaLayout = new javax.swing.GroupLayout(tarea.getContentPane());
         tarea.getContentPane().setLayout(tareaLayout);
@@ -1516,29 +1522,34 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(140, 140, 140))
             .addGroup(tareaLayout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel61)
-                        .addGroup(tareaLayout.createSequentialGroup()
-                            .addComponent(jLabel60)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(tf_minutos))
-                        .addGroup(tareaLayout.createSequentialGroup()
-                            .addComponent(jLabel59)
-                            .addGap(33, 33, 33)
-                            .addComponent(tf_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(tareaLayout.createSequentialGroup()
-                            .addComponent(jLabel62)
-                            .addGap(18, 18, 18)
-                            .addComponent(tf_contenido))
-                        .addGroup(tareaLayout.createSequentialGroup()
-                            .addComponent(jLabel63)
-                            .addGap(18, 18, 18)
-                            .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tareaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton17)
-                        .addGap(36, 36, 36)))
+                .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(tareaLayout.createSequentialGroup()
+                        .addComponent(jLabel63)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel61)
+                            .addGroup(tareaLayout.createSequentialGroup()
+                                .addComponent(jLabel62)
+                                .addGap(18, 18, 18)
+                                .addComponent(tf_contenido))
+                            .addGroup(tareaLayout.createSequentialGroup()
+                                .addComponent(jLabel60)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tf_minutos, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(tareaLayout.createSequentialGroup()
+                                .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel59)
+                                    .addComponent(jLabel10))
+                                .addGap(33, 33, 33)
+                                .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tf_titulo, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                                    .addComponent(tf_hora))))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tareaLayout.createSequentialGroup()
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton17)
+                            .addGap(36, 36, 36))))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
         tareaLayout.setVerticalGroup(
@@ -1550,23 +1561,27 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel59)
                     .addComponent(tf_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(tf_hora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel60)
                     .addComponent(tf_minutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel61)
-                .addGap(27, 27, 27)
+                .addGap(28, 28, 28)
                 .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel62)
-                    .addComponent(tf_contenido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                    .addComponent(tf_contenido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel62))
+                .addGap(29, 29, 29)
                 .addGroup(tareaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel63)
-                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel63))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton17)
-                .addGap(70, 70, 70))
+                .addGap(56, 56, 56))
         );
 
         ta_estado.setColumns(20);
@@ -1896,15 +1911,30 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         try {
+            
             for (Usuario ll : listausuarios) {
                 if (ll.getNickname().equals(tf_nickname_login.getText())) {
                     if (ll.getPassword().equals(pf_password_login.getText())) {
                         nick = ll.getNickname();
                         menu_admin.setEnabled(false);
+                        System.out.println("1");
+                        for (int i = 0; i < ll.getAgenda().size(); i++) {
+                            System.out.println(ll.agenda.get(i).getFechahilo().toString());
+                            String pelo= "2017-8-19-14-25";
+                            //String pelo= ll.agenda.get(i).getFechahilo().toString();
+                            HiloNotificacion hn = new HiloNotificacion(pelo);
+                            hn.start();
+                        }
                         jd_inicio.setModal(true);
                         jd_inicio.pack();
                         jd_inicio.setLocationRelativeTo(this);
                         jd_inicio.setVisible(true);
+                   
+                        
+                        
+                        
+//                       HiloNotificacion hn = new  HiloNotificacion(2017,9,18,21,02);
+//        hn.start();
                     }
                 }
             }
@@ -2847,6 +2877,7 @@ public class Principal extends javax.swing.JFrame {
                 options,
                 options[1]);
         fecha = d + "-" + mm + "-" + a;
+        fechahilo=calendario.getCalendar().get(1)+"/"+calendario.getCalendar().get(2)+"/"+calendario.getCalendar().get(5);
         //  System.out.println(fecha);
         if (n == 0) {
             tarea.setModal(true);
@@ -2871,7 +2902,17 @@ public class Principal extends javax.swing.JFrame {
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
                     System.out.println(l.agenda);
-                    l.agenda.add(new Tarea(tf_contenido.getText(), ta_notas.getText(), fecha, tf_titulo.getText(), Integer.parseInt(tf_minutos.getText())));
+                     String hora = tf_hora.getText();
+                     String[] tokens  = hora.split(":");
+                    int menos = Integer.parseInt(tf_minutos.getText());
+                    int mins = Integer.parseInt(tokens[1]);
+                    int dif = mins-menos;
+                    fechahilo=fecha+"/"+tokens[0]+"/"+dif;
+                    System.out.println("*********"+fecha);
+                   
+                    
+                    
+                    l.agenda.add(new Tarea(tf_contenido.getText(), ta_notas.getText(),tf_hora.getText(), fecha, tf_titulo.getText(), Integer.parseInt(tf_minutos.getText()),fechahilo));
                     System.out.println("agrego");
                     System.out.println(l.agenda);
                     
@@ -2955,7 +2996,14 @@ public class Principal extends javax.swing.JFrame {
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
                     System.out.println(l.agenda);
-                    l.agenda.add(new Evento(tf_inicio.getText(), tf_fin.getText(), fecha, tf_titulo_evento.getText(), Integer.parseInt(tf_minutos_evento.getText())));
+                    String hora = tf_inicio.getText();
+                     String[] tokens  = hora.split(":");
+                    int menos = Integer.parseInt(tf_minutos_evento.getText());
+                    int mins = Integer.parseInt(tokens[1]);
+                    int dif = mins-menos;
+                    fechahilo=fecha+"/"+tokens[0]+"-"+dif;
+                    System.out.println("*********"+fechahilo);
+                    l.agenda.add(new Evento(tf_inicio.getText(), tf_fin.getText(), fecha, tf_titulo_evento.getText(), Integer.parseInt(tf_minutos_evento.getText()),fechahilo));
                     System.out.println("agrego");
                     System.out.println(l.agenda);
                     
@@ -3147,6 +3195,10 @@ public class Principal extends javax.swing.JFrame {
             }
     }//GEN-LAST:event_eliminar_mensajeActionPerformed
 
+    private void jButton17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17MouseEntered
+
     /**
      * @param args the command line arguments
      */
@@ -3232,6 +3284,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -3402,6 +3455,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_contenido;
     private javax.swing.JTextField tf_de;
     private javax.swing.JTextField tf_fin;
+    private javax.swing.JTextField tf_hora;
     private javax.swing.JTextField tf_inicio;
     private javax.swing.JTextField tf_minutos;
     private javax.swing.JTextField tf_minutos_evento;
@@ -3431,6 +3485,7 @@ public class Principal extends javax.swing.JFrame {
     Usuario login;
     String estado_publicacion;
     String nick1;
+    String fechahilo;
     Icon imagen;
     Icon video;
     String texto;

@@ -22,13 +22,14 @@ public class HiloNotificacion extends Thread{
     Object hour;
     Object minutes;
 
-    public HiloNotificacion(Object year, Object month, Object day, Object hour, Object minutes) {
+    public HiloNotificacion(String fecha) {
      
-        this.year = year;
-        this.month = month;
-        this.day = day;
-        this.hour = hour;
-        this.minutes = minutes;
+     Object[] token  = fecha.split("-"); 
+     year = token[0];
+     month = token[1];
+     day = token[2];
+     hour = token[3];
+     minutes = token[4];
      
     }
 
@@ -76,24 +77,31 @@ public class HiloNotificacion extends Thread{
     public void run() {
         Principal p = null ;
        while (true){
-            Date fecha;
-                fecha = new Date();
-               DateFormat f = new SimpleDateFormat("M/dd/yy");
-                 
-                   Object[] tokens  = f.format(fecha).split("/");
-                  Object mes=(tokens[0]);
-                   Object dia=(tokens[1]);
-                    Object anio=("20"+tokens[2]);
-                    Object hora = new Date().getHours();
-                    Object minutos = new Date().getMinutes();
+//            Date fecha;
+//                fecha = new Date();
+//                
+//               DateFormat f = new SimpleDateFormat("M/dd/yy");
+//                 
+//                   Object[] tokens  = f.format(fecha).split("/");
+//                  Object mes=(tokens[0]);
+//                   Object dia=(tokens[1]);
+//                    Object anio=("20"+tokens[2]);
+//                    Object hora = new Date().getHours();
+//                    Object minutos = new Date().getMinutes();
                     
                     if (new Date().getYear()==117) {
                         System.out.println("1");
                         if (new Date().getMonth()==8) {
                             System.out.println("2");
-                            if (new Date().getMinutes()==7) {
+                            if (new Date().getDate()==19) {
                                 System.out.println("3");
-                                 JOptionPane.showMessageDialog(p.label_u, "EVENTO!!!!!!!!");
+                                 if (new Date().getHours()==14) {
+                                     System.out.println("4");
+                                     if (new Date().getMinutes()==26) {
+                                         System.out.println("Deberia");
+                                         JOptionPane.showMessageDialog(p.label_u, "EVENTO!!!!!!!!");
+                                     }
+                                }
                             }
                         }
            }

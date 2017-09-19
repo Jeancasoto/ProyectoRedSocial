@@ -12,16 +12,17 @@ package poyectoredsocial0.pkg1;
 public class Tarea extends Agenda{
     String contenido;
     String notas;
-
+    String hora;
     public Tarea() {
         super();
     }
 
     
-    public Tarea(String contenido, String notas, String fecha, String titulo, int recordatorio) {
-        super(fecha, titulo, recordatorio);
+    public Tarea(String contenido, String notas,String hora, String fecha, String titulo, int recordatorio, Object fechahilo) {
+        super(fecha, titulo, recordatorio, fechahilo);
         this.contenido = contenido;
         this.notas = notas;
+        this.hora=hora;
     }
 
     public String getContenido() {
@@ -38,6 +39,14 @@ public class Tarea extends Agenda{
 
     public void setNotas(String notas) {
         this.notas = notas;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
     }
 
     @Override

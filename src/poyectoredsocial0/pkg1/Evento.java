@@ -18,8 +18,8 @@ public class Evento extends Agenda{
         super();
     }
 
-    public Evento(String inicio, String fin, String fecha, String titulo, int recordatorio) {
-        super(fecha, titulo, recordatorio);
+    public Evento(String inicio, String fin, String fecha, String titulo, int recordatorio, Object fechahilo) {
+        super(fecha, titulo, recordatorio, fechahilo);
         this.inicio = inicio;
         this.fin = fin;
     }
