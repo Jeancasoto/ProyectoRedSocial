@@ -809,7 +809,7 @@ public class Principal extends javax.swing.JFrame {
         panel_agregar.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 540, 430));
 
         jLabel16.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel16.setForeground(new java.awt.Color(0, 51, 204));
         jLabel16.setText("USUARIOS DISPONIBLES");
         panel_agregar.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 470, 90));
 
@@ -873,8 +873,8 @@ public class Principal extends javax.swing.JFrame {
         jButton10.setText("Eliminar Amigo");
         panel_amigos.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 150, 40));
 
-        jLabel21.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel21.setFont(new java.awt.Font("Marker Felt", 3, 36)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 51, 204));
         jLabel21.setText("Amigos");
         panel_amigos.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 106, -1));
 
@@ -1103,6 +1103,11 @@ public class Principal extends javax.swing.JFrame {
 
         admin_editar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        cb_global.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_globalItemStateChanged(evt);
+            }
+        });
         admin_editar.add(cb_global, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 310, -1));
         admin_editar.add(tf_nombre_global, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 320, -1));
 
@@ -1732,12 +1737,13 @@ public class Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(fotosLayout.createSequentialGroup()
-                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(foto_1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(foto_2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(foto_3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(foto_4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(foto_5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(foto_5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(foto_1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(fotosLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1781,14 +1787,13 @@ public class Principal extends javax.swing.JFrame {
         muro_general.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel88.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
-        jLabel88.setForeground(new java.awt.Color(51, 255, 0));
         jLabel88.setText("MURO GENERAL");
         muro_general.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(244, 15, 319, -1));
         muro_general.add(scroll_general, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 80, 661, 470));
 
         jLabel94.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
         jLabel94.setToolTipText("");
-        muro_general.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -20, 1280, 640));
+        muro_general.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(-400, -20, 1280, 640));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2745,7 +2750,7 @@ public class Principal extends javax.swing.JFrame {
             archivo = fc.getSelectedFile();
             //Redimencionar una imagen
             Image img = Toolkit.getDefaultToolkit().createImage(archivo.getPath()).getScaledInstance(200, 200, 0);
-            this.fotodeperfilglobal.setIcon(new ImageIcon(img));
+            fotodeperfilglobal.setIcon(new ImageIcon(img));
         }
     }//GEN-LAST:event_jButton14MouseClicked
 
@@ -2782,8 +2787,9 @@ public class Principal extends javax.swing.JFrame {
     private void jButton15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton15MouseClicked
         // TODO add your handling code here:
         try {
+            String selec = cb_global.getSelectedItem().toString();
             for (Usuario l : listausuarios) {
-                if (l.getNickname().equals(nick)) {
+                if (l.getNickname().equals(selec)) {
                     l.setNombre(tf_nombre_global.getText());
                     l.setNickname(tf_nickname_global.getText());
                     l.setFecha(dc_nacimiento_global.getDate());
@@ -3172,15 +3178,32 @@ public class Principal extends javax.swing.JFrame {
             if (l.getNickname().equals(nick)) {
                 for (Post li : l.getPublitexto()) {
                     paneles p = li.getK();
-                    // p.ta_estado.setText("hvjhvj");
+                 
                     c.add(p);
                     System.out.println(li);
 
                 }
             }
         }
+        
         scroll_general.getViewport().add(c);
-        js.getViewport().add(c);
+          // js.getViewport().add(c);
+//        //---------------------------------------
+//        c.setLayout(new GridLayout(0, 1));
+//        for (Usuario l : listausuarios) {
+//            if (l.getNickname().equals(nick)) {
+//                for (Post li : l.getPublitexto()) {
+//                    paneles p = li.getK();
+//                 
+//                    c.add(p);
+//                    System.out.println(li);
+//
+//                }
+//            }
+//        }
+//        
+//        scroll_general.getViewport().add(c);
+//      js.getViewport().add(c);
     }//GEN-LAST:event_jButton21MouseClicked
 
     private void eliminar_mensajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_mensajeActionPerformed
@@ -3387,36 +3410,54 @@ public class Principal extends javax.swing.JFrame {
         panel_inicio.revalidate();
         panel_inicio.repaint();
         
-         Usuario c1 = null;
-
-        for (Usuario l : listausuarios) {
-            if (l.getNickname().equals(nick)) {
-                c1 = l;
-            }
-        }
-
-        c1.getPublitexto().add(new Post(imagen, video, texto,c1));
-
-//        lb_set_imagen.setText("");
-//        lb_set_video.setText("");
-//        ta_texto.setText("");
-        c.setLayout(new GridLayout(0, 1));
-        for (Usuario l : listausuarios) {
-            if (l.getNickname().equals(nick)) {
-                for (Post li : l.getPublitexto()) {
-                    paneles p = li.getK();
-                    // p.ta_estado.setText("hvjhvj");
-                    c.add(p);
-                    System.out.println(li);
-
-                }
-            }
-        }
-        scroll_general.getViewport().add(c);
-        //js.getViewport().add(c);
-        
-        
+//         Usuario c1 = null;
+//
+//        for (Usuario l : listausuarios) {
+//            if (l.getNickname().equals(nick)) {
+//                c1 = l;
+//            }
+//        }
+//
+//        c1.getPublitexto().add(new Post(imagen, video, texto,c1));
+//
+////        lb_set_imagen.setText("");
+////        lb_set_video.setText("");
+////        ta_texto.setText("");
+//        c.setLayout(new GridLayout(0, 1));
+//        for (Usuario l : listausuarios) {
+//            if (l.getNickname().equals(nick)) {
+//                for (Post li : l.getPublitexto()) {
+//                    paneles p = li.getK();
+//                    // p.ta_estado.setText("hvjhvj");
+//                    c.add(p);
+//                    System.out.println(li);
+//
+//                }
+//            }
+//        }
+//        scroll_general.getViewport().add(c);
+//        //js.getViewport().add(c);
+//        
+//        
     }//GEN-LAST:event_jLabel91MouseClicked
+
+    private void cb_globalItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_globalItemStateChanged
+             if (evt.getStateChange() == 2) {
+           String selec =cb_global.getSelectedItem().toString();
+                 for (Usuario l : listausuarios) {
+                     if (l.getNickname().equals(selec)) {
+                         tf_nombre_global.setText(l.getNombre());
+                         tf_nickname_global.setText(l.getNickname());
+                         pf_password_global.setText(l.getPassword());
+                         cb_nacionalidad_global.setSelectedItem(l.getNacionalidad());
+                        dc_nacimiento_global.setDate(l.getFecha());
+                        fotodeperfilglobal.setIcon(l.getFotografia());
+                        
+                     }
+                 }
+
+        }
+    }//GEN-LAST:event_cb_globalItemStateChanged
 
     /**
      * @param args the command line arguments
