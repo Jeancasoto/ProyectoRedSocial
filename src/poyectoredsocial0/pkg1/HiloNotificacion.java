@@ -24,7 +24,7 @@ public class HiloNotificacion extends Thread{
 
     public HiloNotificacion(String fecha) {
      
-     Object[] token  = fecha.split("-"); 
+     Object[] token  = fecha.split("/"); 
      year = token[0];
      month = token[1];
      day = token[2];
@@ -91,15 +91,15 @@ public class HiloNotificacion extends Thread{
                     
                     if (new Date().getYear()==117) {
                         System.out.println("1");
-                        if (new Date().getMonth()==8) {
+                        if (new Date().getMonth()==Integer.parseInt((String)month)) {
                             System.out.println("2");
-                            if (new Date().getDate()==19) {
+                            if (new Date().getDate()==Integer.parseInt((String)day)) {
                                 System.out.println("3");
-                                 if (new Date().getHours()==14) {
+                                 if (new Date().getHours()==Integer.parseInt((String)hour)) {
                                      System.out.println("4");
-                                     if (new Date().getMinutes()==26) {
+                                     if (new Date().getMinutes()==Integer.parseInt((String)minutes)) {
                                          System.out.println("Deberia");
-                                         JOptionPane.showMessageDialog(p.label_u, "EVENTO!!!!!!!!");
+                                         JOptionPane.showMessageDialog(p.js, "Recordatorio de agenda!");
                                      }
                                 }
                             }

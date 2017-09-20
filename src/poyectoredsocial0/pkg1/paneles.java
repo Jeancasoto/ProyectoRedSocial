@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author jeansoto
  */
-public class paneles extends javax.swing.JPanel {
+public class paneles extends javax.swing.JPanel  {
 
     /**
      * Creates new form paneles

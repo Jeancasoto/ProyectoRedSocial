@@ -19,6 +19,11 @@ Icon imagen;
 Icon video;
 String texto;
 
+private static final long SerialVersionUID = 001L;
+
+    public Post() {
+    }
+
 
 
     public Post(Icon imagen, Icon video, String texto) {

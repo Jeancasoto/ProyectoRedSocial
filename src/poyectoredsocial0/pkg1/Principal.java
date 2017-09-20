@@ -41,10 +41,9 @@ public class Principal extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Principal() {
-        
+
         initComponents();
-        
-        
+
     }
 
     /**
@@ -69,6 +68,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
         panel_inicio = new javax.swing.JPanel();
+        jLabel58 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
@@ -108,8 +108,6 @@ public class Principal extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jButton18 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         lb_nombre_muro = new javax.swing.JLabel();
         lb_nickname_muro = new javax.swing.JLabel();
         lb_nacionalidad_muro = new javax.swing.JLabel();
@@ -117,24 +115,21 @@ public class Principal extends javax.swing.JFrame {
         panel_agregar = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla_usuarios = new javax.swing.JList();
-        jButton2 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         panel_solicitudes = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tabla_solicitudes = new javax.swing.JList();
         jButton4 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         panel_amigos = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tabla_amigos = new javax.swing.JList();
         jButton10 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         panel_mensajeria = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
@@ -157,7 +152,6 @@ public class Principal extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         tf_para = new javax.swing.JTextField();
         jButton11 = new javax.swing.JButton();
-        jPanel9 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         pop_menu = new javax.swing.JPopupMenu();
@@ -172,11 +166,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         admin_eliminar = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
         jScrollPane8 = new javax.swing.JScrollPane();
         registro = new javax.swing.JList();
-        jLabel42 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
-        jPanel10 = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         admin_editar = new javax.swing.JPanel();
         cb_global = new javax.swing.JComboBox();
@@ -267,6 +260,25 @@ public class Principal extends javax.swing.JFrame {
         jButton23 = new javax.swing.JButton();
         menu_pop = new javax.swing.JPopupMenu();
         eliminar_mensaje = new javax.swing.JMenuItem();
+        fotos = new javax.swing.JDialog();
+        foto_3 = new javax.swing.JLabel();
+        foto_2 = new javax.swing.JLabel();
+        foto_1 = new javax.swing.JLabel();
+        foto_6 = new javax.swing.JLabel();
+        foto_7 = new javax.swing.JLabel();
+        foto_8 = new javax.swing.JLabel();
+        foto_9 = new javax.swing.JLabel();
+        foto_4 = new javax.swing.JLabel();
+        foto_5 = new javax.swing.JLabel();
+        foto_10 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jLabel86 = new javax.swing.JLabel();
+        tf_titulo_album = new javax.swing.JTextField();
+        recuerdos = new javax.swing.JPanel();
+        scroll = new javax.swing.JScrollPane();
+        jLabel87 = new javax.swing.JLabel();
+        jButton24 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         tf_nickname_login = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -377,10 +389,15 @@ public class Principal extends javax.swing.JFrame {
         jLabel55.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 0));
         jLabel55.setText("Album de fotos");
+        jLabel55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel55MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 170, 30));
 
-        jLabel32.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/unnamed.jpg")); // NOI18N
-        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 590));
+        jLabel32.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -20, 330, 610));
 
         jLabel53.setFont(new java.awt.Font("Marker Felt", 3, 30)); // NOI18N
         jLabel53.setForeground(new java.awt.Color(255, 255, 0));
@@ -394,22 +411,27 @@ public class Principal extends javax.swing.JFrame {
 
         jd_inicio.getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 310, 590));
 
-        panel_inicio.setBackground(new java.awt.Color(255, 255, 255));
+        panel_inicio.setBackground(new java.awt.Color(185, 102, 19));
+        panel_inicio.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel58.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
 
         javax.swing.GroupLayout panel_inicioLayout = new javax.swing.GroupLayout(panel_inicio);
         panel_inicio.setLayout(panel_inicioLayout);
         panel_inicioLayout.setHorizontalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 790, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_inicioLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 947, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         panel_inicioLayout.setVerticalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 590, Short.MAX_VALUE)
+            .addComponent(jLabel58, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 590, Short.MAX_VALUE)
         );
 
-        jd_inicio.getContentPane().add(panel_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 790, 590));
+        jd_inicio.getContentPane().add(panel_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 790, 590));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/thumb-1920-509783.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
         jd_inicio.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1380, 670));
 
         jMenu2.setText("Configuracion");
@@ -623,6 +645,8 @@ public class Principal extends javax.swing.JFrame {
                         .addGap(25, 25, 25))))
         );
 
+        panel_mimuro1.setBackground(new java.awt.Color(153, 102, 0));
+
         panel_mimuro.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         js.setPreferredSize(new java.awt.Dimension(604, 500));
@@ -662,26 +686,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel37.setText("Nacionalidad");
 
         jButton18.setBackground(new java.awt.Color(51, 204, 255));
-        jButton18.setText("Publicar Estado");
+        jButton18.setText("Publicar");
         jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton18MouseClicked(evt);
-            }
-        });
-
-        jButton5.setBackground(new java.awt.Color(51, 153, 255));
-        jButton5.setText("Publicar Video");
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton5MouseClicked(evt);
-            }
-        });
-
-        jButton6.setBackground(new java.awt.Color(0, 204, 255));
-        jButton6.setText("Publicar Imagen");
-        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton6MouseClicked(evt);
             }
         });
 
@@ -698,36 +706,31 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel8Layout.createSequentialGroup()
+                            .addGap(0, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel37)
+                            .addGap(60, 60, 60))
+                        .addGroup(jPanel8Layout.createSequentialGroup()
+                            .addComponent(jLabel36)
+                            .addGap(98, 98, 98)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel8Layout.createSequentialGroup()
-                                    .addGap(0, 0, Short.MAX_VALUE)
-                                    .addComponent(jLabel37)
-                                    .addGap(60, 60, 60))
-                                .addGroup(jPanel8Layout.createSequentialGroup()
-                                    .addComponent(jLabel36)
-                                    .addGap(98, 98, 98)))
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(jLabel34)
-                                .addGap(83, 83, 83)))
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(lb_nickname_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(lb_nombre_muro, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                                    .addComponent(lb_nacionalidad_muro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(jLabel34)
+                        .addGap(83, 83, 83)))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addComponent(lb_nacionalidad_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(156, 156, 156))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lb_nickname_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(lb_nombre_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(129, 129, 129))))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -735,28 +738,28 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lb_nickname_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lb_nombre_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel37, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lb_nacionalidad_muro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(9, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addComponent(jButton18)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton6)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(lb_nickname_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lb_nombre_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel37, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lb_nacionalidad_muro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(jButton18)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
         javax.swing.GroupLayout panel_mimuro1Layout = new javax.swing.GroupLayout(panel_mimuro1);
@@ -769,12 +772,10 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(panel_mimuro1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 25, Short.MAX_VALUE))
-            .addGroup(panel_mimuro1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(js, javax.swing.GroupLayout.PREFERRED_SIZE, 701, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(panel_mimuro1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(js, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 49, Short.MAX_VALUE))
         );
         panel_mimuro1Layout.setVerticalGroup(
             panel_mimuro1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -782,8 +783,8 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(js, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1698, Short.MAX_VALUE)
+                .addComponent(js, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(panel_mimuro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -792,11 +793,16 @@ public class Principal extends javax.swing.JFrame {
 
         panel_agregar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tabla_usuarios.setBackground(new java.awt.Color(204, 255, 255));
+        tabla_usuarios.setBackground(new java.awt.Color(204, 204, 204));
         tabla_usuarios.setModel(new DefaultListModel());
         jScrollPane1.setViewportView(tabla_usuarios);
 
         panel_agregar.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 540, 430));
+
+        jLabel16.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel16.setText("USUARIOS DISPONIBLES");
+        panel_agregar.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 470, 90));
 
         jButton2.setText("Enviar solicitud");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -806,33 +812,13 @@ public class Principal extends javax.swing.JFrame {
         });
         panel_agregar.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 530, 170, 40));
 
-        jLabel16.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel16.setText("USUARIOS DISPONIBLES");
-        panel_agregar.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 470, 90));
-
-        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 540, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
-        );
-
-        panel_agregar.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 540, 70));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
-        jLabel15.setText("jLabel15");
-        panel_agregar.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 590));
+        jLabel15.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        jLabel15.setToolTipText("");
+        panel_agregar.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -100, 1370, 740));
 
         panel_solicitudes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tabla_solicitudes.setBackground(new java.awt.Color(204, 255, 255));
+        tabla_solicitudes.setBackground(new java.awt.Color(204, 204, 204));
         tabla_solicitudes.setModel(new DefaultListModel());
         jScrollPane2.setViewportView(tabla_solicitudes);
 
@@ -854,62 +840,17 @@ public class Principal extends javax.swing.JFrame {
         });
         panel_solicitudes.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 520, 140, 40));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
-
         jLabel19.setFont(new java.awt.Font("Marker Felt", 3, 36)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(102, 255, 102));
         jLabel19.setText("SOLICITUDES DE AMISTAD PENDIENTES");
+        panel_solicitudes.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 545, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel19)
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
-
-        panel_solicitudes.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 550, 60));
-
-        jLabel18.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
-        panel_solicitudes.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 600));
+        jLabel18.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        panel_solicitudes.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -10, 1240, 630));
 
         panel_amigos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(204, 255, 255));
-
-        jLabel21.setFont(new java.awt.Font("Marker Felt", 3, 36)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel21.setText("Amigos");
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(190, 190, 190)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(204, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel21)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        panel_amigos.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 500, 60));
-
-        tabla_amigos.setBackground(new java.awt.Color(204, 255, 255));
+        tabla_amigos.setBackground(new java.awt.Color(204, 204, 204));
         tabla_amigos.setModel(new DefaultListModel());
         tabla_amigos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -923,12 +864,17 @@ public class Principal extends javax.swing.JFrame {
         jButton10.setText("Eliminar Amigo");
         panel_amigos.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 150, 40));
 
-        jLabel20.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
-        panel_amigos.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 590));
+        jLabel21.setFont(new java.awt.Font("Marker Felt", 3, 36)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel21.setText("Amigos");
+        panel_amigos.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 106, -1));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        panel_amigos.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -10, 1360, 620));
 
         panel_mensajeria.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel7.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel7.setBackground(new java.awt.Color(204, 204, 204));
 
         lista_mensajes.setModel(new DefaultListModel());
         lista_mensajes.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -980,12 +926,12 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Bandeja de Entrada", jPanel7);
 
-        jPanel6.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel6.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel28.setText("Mensaje a :");
         jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1033,7 +979,7 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jScrollPane7)
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(149, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1049,7 +995,7 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
                     .addComponent(tf_para, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1064,35 +1010,15 @@ public class Principal extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Crear mensaje", jPanel6);
 
-        panel_mensajeria.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 112, -1, -1));
-
-        jPanel9.setBackground(new java.awt.Color(204, 204, 255));
+        panel_mensajeria.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 113, -1, 450));
 
         jLabel26.setFont(new java.awt.Font("Marker Felt", 3, 36)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel26.setForeground(new java.awt.Color(153, 255, 51));
         jLabel26.setText("MENSAJERIA");
+        panel_mensajeria.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, -1, -1));
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(244, 244, 244)
-                .addComponent(jLabel26)
-                .addContainerGap(254, Short.MAX_VALUE))
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel26)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        panel_mensajeria.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 690, 50));
-
-        jLabel27.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
-        panel_mensajeria.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 600));
+        jLabel27.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        panel_mensajeria.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(-400, -100, 1280, 740));
 
         Eliminar.setText("Eliminar");
         Eliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -1144,16 +1070,16 @@ public class Principal extends javax.swing.JFrame {
 
         admin_eliminar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel42.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(153, 255, 0));
+        jLabel42.setText("TODOS LOS USUARIOS REGISTRADOS");
+        admin_eliminar.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 690, -1));
+
         registro.setBackground(new java.awt.Color(204, 204, 204));
         registro.setModel(new DefaultListModel());
         jScrollPane8.setViewportView(registro);
 
         admin_eliminar.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 119, 514, 350));
-
-        jLabel42.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(0, 153, 0));
-        jLabel42.setText("TODOS LOS USUARIOS REGISTRADOS");
-        admin_eliminar.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         jButton13.setText("Eliminar usuario");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -1163,21 +1089,8 @@ public class Principal extends javax.swing.JFrame {
         });
         admin_eliminar.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 487, -1, 44));
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
-        );
-
-        admin_eliminar.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 750, 70));
-
-        jLabel43.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
-        admin_eliminar.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 770, 560));
+        jLabel43.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        admin_eliminar.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -80, 1390, 740));
 
         admin_editar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1285,11 +1198,12 @@ public class Principal extends javax.swing.JFrame {
         crear_admin.add(crear_cuenta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 150, 40));
 
         jLabel51.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(51, 255, 51));
         jLabel51.setText("Crear administrador");
-        crear_admin.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, -1, -1));
+        crear_admin.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, -1, -1));
 
-        jLabel50.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/Colorful-Art-Desktop-Backgrounds.jpg")); // NOI18N
-        crear_admin.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 780, 570));
+        jLabel50.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        crear_admin.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(-400, -40, 1220, 630));
 
         calendario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1737,6 +1651,143 @@ public class Principal extends javax.swing.JFrame {
         });
         menu_pop.add(eliminar_mensaje);
 
+        jButton5.setText("Seleccionar");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
+
+        jButton6.setText("Guardar album");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
+
+        jLabel86.setText("Titulo del album:");
+
+        javax.swing.GroupLayout fotosLayout = new javax.swing.GroupLayout(fotos.getContentPane());
+        fotos.getContentPane().setLayout(fotosLayout);
+        fotosLayout.setHorizontalGroup(
+            fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fotosLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(fotosLayout.createSequentialGroup()
+                        .addComponent(foto_1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(foto_2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(foto_3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(foto_4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fotosLayout.createSequentialGroup()
+                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(fotosLayout.createSequentialGroup()
+                                .addComponent(foto_6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(foto_7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(foto_8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(fotosLayout.createSequentialGroup()
+                                .addGap(81, 81, 81)
+                                .addComponent(jButton5)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(fotosLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(foto_9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(fotosLayout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(jButton6)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(foto_5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(foto_10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fotosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel86)
+                .addGap(18, 18, 18)
+                .addComponent(tf_titulo_album, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39))
+        );
+        fotosLayout.setVerticalGroup(
+            fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fotosLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel86)
+                    .addComponent(tf_titulo_album, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(fotosLayout.createSequentialGroup()
+                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(foto_1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(foto_2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(foto_3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(foto_4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(foto_5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(fotosLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(foto_6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(foto_7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(fotosLayout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(foto_10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(fotosLayout.createSequentialGroup()
+                        .addGap(115, 115, 115)
+                        .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(foto_8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(foto_9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton5)
+                    .addComponent(jButton6))
+                .addContainerGap())
+        );
+
+        jLabel87.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
+        jLabel87.setText("MIS RECUERDOS");
+
+        jButton24.setText("Cargar ");
+        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton24MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout recuerdosLayout = new javax.swing.GroupLayout(recuerdos);
+        recuerdos.setLayout(recuerdosLayout);
+        recuerdosLayout.setHorizontalGroup(
+            recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(recuerdosLayout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addGroup(recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recuerdosLayout.createSequentialGroup()
+                        .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recuerdosLayout.createSequentialGroup()
+                        .addComponent(jLabel87)
+                        .addGap(72, 72, 72)
+                        .addComponent(jButton24)
+                        .addGap(53, 53, 53))))
+        );
+        recuerdosLayout.setVerticalGroup(
+            recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recuerdosLayout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addGroup(recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel87)
+                    .addComponent(jButton24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 499, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1849,7 +1900,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 590, 180, 40));
         getContentPane().add(dc_nacimiento_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 480, 170, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/EM-208_cyborg.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1390, 720));
 
         jMenu1.setText("Archivos");
@@ -1894,7 +1945,7 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        
+
         try {
             ap.setListausuarios(listausuarios);
             ap.escribirArchivo();
@@ -1911,7 +1962,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         try {
-            
+
             for (Usuario ll : listausuarios) {
                 if (ll.getNickname().equals(tf_nickname_login.getText())) {
                     if (ll.getPassword().equals(pf_password_login.getText())) {
@@ -1919,26 +1970,24 @@ public class Principal extends javax.swing.JFrame {
                         menu_admin.setEnabled(false);
                         System.out.println("1");
                         for (int i = 0; i < ll.getAgenda().size(); i++) {
-                            System.out.println(ll.agenda.get(i).getFechahilo().toString());
-                            String pelo= "2017-8-19-14-25";
+                            System.out.println("algo por aqui" + ll.agenda.get(i).getFechahilo().toString());
+                            //String pelo= "2017-8-19-14-25";
                             //String pelo= ll.agenda.get(i).getFechahilo().toString();
-                            HiloNotificacion hn = new HiloNotificacion(pelo);
+                            HiloNotificacion hn = new HiloNotificacion(ll.agenda.get(i).getFechahilo().toString());
                             hn.start();
+
                         }
                         jd_inicio.setModal(true);
                         jd_inicio.pack();
                         jd_inicio.setLocationRelativeTo(this);
                         jd_inicio.setVisible(true);
-                   
-                        
-                        
-                        
+
 //                       HiloNotificacion hn = new  HiloNotificacion(2017,9,18,21,02);
 //        hn.start();
                     }
                 }
             }
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -1989,13 +2038,13 @@ public class Principal extends javax.swing.JFrame {
             try {
                 ap.cargarArchivo();
                 listausuarios = ap.getListausuarios();
-                
+
                 JOptionPane.showMessageDialog(this, "Archivo abierto con exito");
             } catch (Exception e) {
                 e.printStackTrace();
                 JOptionPane.showMessageDialog(this, "Ocurrio un error");
             }
-            
+
         }
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
@@ -2014,7 +2063,7 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         JFileChooser fc = new JFileChooser();
         FileFilter filtro = new FileNameExtensionFilter("Imagenes", "png", "jpg", "jpeg", "gif");
-        
+
         fc.setFileFilter(filtro);
         File archivo;
         int op = fc.showOpenDialog(foto_perfil);
@@ -2039,7 +2088,7 @@ public class Principal extends javax.swing.JFrame {
                     l.setNacionalidad(cb_nacionalidad_editar.getSelectedItem().toString());
                 }
             }
-            
+
             JOptionPane.showMessageDialog(fotodeperfil, "Usuario modificado con exito");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(fotodeperfil, "Ocurrio un error");
@@ -2062,7 +2111,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        
+
         try {
             for (Usuario lll : listausuarios) {
                 if (lll.getNickname().equals(nick)) {
@@ -2077,7 +2126,7 @@ public class Principal extends javax.swing.JFrame {
             foto_perfil.pack();
             foto_perfil.setLocationRelativeTo(this);
             foto_perfil.setVisible(true);
-            
+
             JOptionPane.showMessageDialog(fotodeperfil, "Usuario cargado con exito");
         } catch (Exception e) {
             e.printStackTrace();
@@ -2089,12 +2138,12 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         panel_mimuro1.setSize(777, 580);
         panel_mimuro1.setLocation(5, 5);
-        
+
         panel_inicio.removeAll();
         panel_inicio.add(panel_mimuro1, BorderLayout.CENTER);
         panel_inicio.revalidate();
         panel_inicio.repaint();
-        
+
         for (Usuario l : listausuarios) {
             if (l.getNickname().equals(nick)) {
                 lb_nickname_muro.setText(l.getNickname());
@@ -2109,12 +2158,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel12MouseClicked
 
     private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
-        
-        
+
         publicacion.setModal(true);
-            publicacion.pack();
-            publicacion.setLocationRelativeTo(this);
-            publicacion.setVisible(true);
+        publicacion.pack();
+        publicacion.setLocationRelativeTo(this);
+        publicacion.setVisible(true);
 //         estado.setModal(true);
 //        estado.pack();
 //        estado.setLocationRelativeTo(lb_nacionalidad_muro);
@@ -2151,34 +2199,32 @@ public class Principal extends javax.swing.JFrame {
 //        {
 //            System.out.println("Tiene algo");
 //        }
-        
-        
+
         /*
 
-        Usuario c1=null;
-        Container c = new Container();
-        for (Usuario l : listausuarios) {
-            if (l.getNickname().equals(nick)) {
-            c1=l;
-            }
-        }
-        c1.getPublitexto().add(new Post());
-        c1.getPublitexto().add(new Post());
+         Usuario c1=null;
+         Container c = new Container();
+         for (Usuario l : listausuarios) {
+         if (l.getNickname().equals(nick)) {
+         c1=l;
+         }
+         }
+         c1.getPublitexto().add(new Post());
+         c1.getPublitexto().add(new Post());
         
-        c.setLayout(new GridLayout(0,1));
-        for (Usuario l : listausuarios) {
-            if (l.getNickname().equals(nick)) {
-                for (Post li : l.getPublitexto()) {
-                   paneles p = li.getK();
-                    c.add(p);
+         c.setLayout(new GridLayout(0,1));
+         for (Usuario l : listausuarios) {
+         if (l.getNickname().equals(nick)) {
+         for (Post li : l.getPublitexto()) {
+         paneles p = li.getK();
+         c.add(p);
                     
-                }
-            }
-        }
-        js.getViewport().add(c);
+         }
+         }
+         }
+         js.getViewport().add(c);
         
-        */
-        
+         */
 //  publicacion_texto.setModal(true);
 //        publicacion_texto.pack();
 //        publicacion_texto.setLocationRelativeTo(this);
@@ -2186,38 +2232,22 @@ public class Principal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton18MouseClicked
 
-    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        // TODO add your handling code here:
-//
-//        try {
-//
-//            panel_nuevapublicacion_video.setSize(705, 450);
-//            panel_nuevapublicacion_video.setLocation(0, 500);
-//
-//            // panel_interno.removeAll();
-//            panel_interno.add(panel_nuevapublicacion_video, BorderLayout.CENTER);
-//            // panel_interno.add(panel_nuevapublicacion);
-//            // panel_interno.revalidate();
-//            //panel_interno.repaint();
-//
-//            JOptionPane.showMessageDialog(publicacion_texto, "Publicacion realizada con exito");
-//
-//        } catch (Exception e) {
-//            JOptionPane.showMessageDialog(publicacion_texto, "Ocurrio un errror");
-//        }
-    }//GEN-LAST:event_jButton5MouseClicked
-
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
         // TODO add your handling code here:
         try {
+
+            tabla_usuarios.setBackground(new java.awt.Color(204, 204, 204));
+            tabla_usuarios.setModel(new DefaultListModel());
+            jScrollPane1.setViewportView(tabla_usuarios);
+
             panel_agregar.setSize(777, 580);
             panel_agregar.setLocation(5, 5);
-            
+
             panel_inicio.removeAll();
             panel_inicio.add(panel_agregar, BorderLayout.CENTER);
             panel_inicio.revalidate();
             panel_inicio.repaint();
-            
+
             DefaultListModel mod = (DefaultListModel) tabla_usuarios.getModel();
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
@@ -2225,14 +2255,23 @@ public class Principal extends javax.swing.JFrame {
                 } else {
                     mod.addElement(l.getNickname());
                 }
-                
+
+//                if (l.getNickname().equals(nick)) {
+//                    for (int i = 0; i < l.amigos.size(); i++) {
+//                        if (l.amigos.get(i).equals(l)) {
+//                            mod.addElement("");
+//                        } else {
+//                            mod.addElement(l.getNickname());
+//                        }
+//                    }
+//                }
             }
-            
+
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(tabla_usuarios, e);
         }
-        
+
 
     }//GEN-LAST:event_jLabel13MouseClicked
 
@@ -2241,13 +2280,22 @@ public class Principal extends javax.swing.JFrame {
         try {
             emisor = nick;
             receptor = tabla_usuarios.getSelectedValue().toString();
-            
+            for (Usuario j : listausuarios) {
+                for (int i = 0; i < j.amigos.size(); i++) {
+                    if (j.amigos.get(i).equals(receptor)) {
+                        System.out.println("Es amigo");
+                        JOptionPane.showMessageDialog(tabla_usuarios, "Este usuario ya pertenece a sus amigos");
+
+                    }
+                }
+            }
+
             for (Usuario u : listausuarios) {
                 if (u.getNickname().equals(receptor)) {
                     u.solicitudes.add(emisor);
                 }
             }
-            
+
             JOptionPane.showMessageDialog(tabla_usuarios, "Solicitud enviada con exito");
             tabla_usuarios.setBackground(new java.awt.Color(204, 255, 255));
             tabla_usuarios.setModel(new DefaultListModel());
@@ -2256,7 +2304,7 @@ public class Principal extends javax.swing.JFrame {
             e.printStackTrace();
             JOptionPane.showMessageDialog(tabla_usuarios, "Ocurrio un error");
         }
-        
+
 
     }//GEN-LAST:event_jButton2MouseClicked
 
@@ -2265,7 +2313,7 @@ public class Principal extends javax.swing.JFrame {
         try {
             panel_solicitudes.setSize(777, 580);
             panel_solicitudes.setLocation(5, 5);
-            
+
             panel_inicio.removeAll();
             panel_inicio.add(panel_solicitudes, BorderLayout.CENTER);
             panel_inicio.revalidate();
@@ -2273,12 +2321,12 @@ public class Principal extends javax.swing.JFrame {
             DefaultListModel mod = (DefaultListModel) tabla_solicitudes.getModel();
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
-                    
+
                     for (Object s : l.getSolicitudes()) {
                         for (Usuario ll : listausuarios) {
                             System.out.println(ll.solicitudes);
                         }
-                        
+
                         mod.addElement(s.toString());
                     }
                 }
@@ -2296,7 +2344,7 @@ public class Principal extends javax.swing.JFrame {
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
         // TODO add your handling code here:
         try {
-            
+
             String seleccionado = tabla_solicitudes.getSelectedValue().toString();
             for (int i = 0; i < listausuarios.size(); i++) {
                 System.out.println("primer for");
@@ -2307,7 +2355,7 @@ public class Principal extends javax.swing.JFrame {
                         if (listausuarios.get(i).solicitudes.get(j).equals(seleccionado)) {
                             System.out.println("ultimo if");
                             listausuarios.get(i).solicitudes.remove(j);
-                            
+
                         }
                     }
                 }
@@ -2325,29 +2373,29 @@ public class Principal extends javax.swing.JFrame {
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
         // TODO add your handling code here:
         try {
-            
+
             panel_amigos.setSize(777, 580);
             panel_amigos.setLocation(5, 5);
-            
+
             panel_inicio.removeAll();
             panel_inicio.add(panel_amigos, BorderLayout.CENTER);
             panel_inicio.revalidate();
             panel_inicio.repaint();
-            
+
             tabla_amigos.setBackground(new java.awt.Color(204, 255, 255));
             tabla_amigos.setModel(new DefaultListModel());
-            
+
             DefaultListModel mod = (DefaultListModel) tabla_amigos.getModel();
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
-                    
+
                     for (Object s : l.getAmigos()) {
-                        
+
                         mod.addElement(s.toString());
                     }
                 }
             }
-            
+
         } catch (Exception e) {
         }
     }//GEN-LAST:event_jLabel22MouseClicked
@@ -2355,11 +2403,11 @@ public class Principal extends javax.swing.JFrame {
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
         try {
-            
+
             String seleccionado = tabla_solicitudes.getSelectedValue().toString();
             for (int i = 0; i < listausuarios.size(); i++) {
                 System.out.println("primer for");
-                
+
                 if (listausuarios.get(i).getNickname().equals(nick)) {
                     System.out.println(nick + "---" + listausuarios.get(i).amigos);
                     System.out.println("if");
@@ -2370,7 +2418,7 @@ public class Principal extends javax.swing.JFrame {
                             listausuarios.get(i).solicitudes.remove(j);
                             listausuarios.get(i).amigos.add(seleccionado);
                             System.out.println(nick + "---" + listausuarios.get(i).amigos);
-                            
+
                         }
                     }
                 }
@@ -2384,7 +2432,7 @@ public class Principal extends javax.swing.JFrame {
             tabla_solicitudes.setBackground(new java.awt.Color(204, 255, 255));
             tabla_solicitudes.setModel(new DefaultListModel());
             jScrollPane2.setViewportView(tabla_solicitudes);
-            
+
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(tabla_solicitudes, "Ocurrio un error");
@@ -2437,7 +2485,7 @@ public class Principal extends javax.swing.JFrame {
                 if (p.getNickname().equals(nick)) {
                     for (int i = 0; i < p.amigos.size(); i++) {
                         if (p.amigos.get(i).equals(seleccionado)) {
-                            
+
                             p.amigos.remove(i);
                             System.out.println("ELIMINO");
                         }
@@ -2449,7 +2497,7 @@ public class Principal extends javax.swing.JFrame {
             tabla_amigos.setModel(new DefaultListModel());
         } catch (Exception e) {
         }
-        
+
 
     }//GEN-LAST:event_EliminarActionPerformed
 
@@ -2458,32 +2506,32 @@ public class Principal extends javax.swing.JFrame {
         try {
             panel_mensajeria.setSize(777, 580);
             panel_mensajeria.setLocation(5, 5);
-            
+
             panel_inicio.removeAll();
             panel_inicio.add(panel_mensajeria, BorderLayout.CENTER);
             panel_inicio.revalidate();
             panel_inicio.repaint();
-            
+
             lista_mensajes.setModel(new DefaultListModel());
             jScrollPane4.setViewportView(lista_mensajes);
-            
+
             DefaultListModel mod = (DefaultListModel) lista_mensajes.getModel();
             for (Usuario pp : listausuarios) {
                 if (pp.getNickname().equals(nick)) {
                     for (int i = 0; i < pp.mensajesR.size(); i++) {
-                        if (pp.mensajesR.get(i).getEstado()==6) {
-                            mod.addElement("*"+pp.mensajesR.get(i)+"*");
-                        }else   if (pp.mensajesR.get(i).getEstado()==9) {
+                        if (pp.mensajesR.get(i).getEstado() == 6) {
+                            mod.addElement("*" + pp.mensajesR.get(i) + "*");
+                        } else if (pp.mensajesR.get(i).getEstado() == 9) {
                             mod.addElement(pp.mensajesR.get(i));
                         }
-                        
+
                     }
 //                for (Object p : pp.mensajesR) {
 //                    mod.addElement(p);
 //                }
                 }
             }
-            
+
             lista_amiguitos.setModel(new DefaultListModel());
             jScrollPane6.setViewportView(lista_amiguitos);
             DefaultListModel mode = (DefaultListModel) lista_amiguitos.getModel();
@@ -2491,16 +2539,16 @@ public class Principal extends javax.swing.JFrame {
                 if (tt.getNickname().equals(nick)) {
                     for (Object t : tt.amigos) {
                         mode.addElement(t);
-                        
+
                     }
                 }
             }
-            
+
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(lista_mensajes, "Ocurrio un error");
         }
-        
+
 
     }//GEN-LAST:event_jLabel31MouseClicked
 
@@ -2511,22 +2559,19 @@ public class Principal extends javax.swing.JFrame {
         ta_cuerpo.setText("");
         String selec = lista_amiguitos.getSelectedValue().toString();
         tf_para.setText(selec);
-        
+
 
     }//GEN-LAST:event_lista_amiguitosMouseClicked
 
     private void lista_mensajesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lista_mensajesMouseClicked
         // TODO add your handling code here:
-        
-        
-        
-        
+
         tf_de.setText("");
         ta_texto.setText("");
         String selec = lista_mensajes.getSelectedValue().toString();
-        System.out.println("7777"+selec);
-        String sel= selec.replace("*", "");
-        System.out.println("8888"+sel);
+        System.out.println("7777" + selec);
+        String sel = selec.replace("*", "");
+        System.out.println("8888" + sel);
         tf_de.setText(sel);
         for (Usuario l : listausuarios) {
             if (l.getNickname().equals(nick)) {
@@ -2545,29 +2590,29 @@ public class Principal extends javax.swing.JFrame {
                 }
             }
         }
-        
+
         if (evt.isMetaDown()) {
             menu_pop.removeAll();
             menu_pop.add(eliminar_mensaje);
-           
-        menu_pop.show(evt.getComponent(), evt.getX(), evt.getY());
+
+            menu_pop.show(evt.getComponent(), evt.getX(), evt.getY());
             //int row = lista_mensajes.getClosestRowForLocation(evt.getX(), evt.getY());
-            
+
         }
     }//GEN-LAST:event_lista_mensajesMouseClicked
 
     private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
         // TODO add your handling code here:
         try {
-            
+
             String selec = lista_amiguitos.getSelectedValue().toString();
             emisor = nick;
             String mensaje = ta_cuerpo.getText();
             receptor = selec;
-            leido=6;
+            leido = 6;
             for (Usuario p : listausuarios) {
                 if (p.getNickname().equals(receptor)) {
-                    p.mensajesR.add(new Mensaje(emisor, receptor, mensaje,leido));
+                    p.mensajesR.add(new Mensaje(emisor, receptor, mensaje, leido));
                 }
             }
             JOptionPane.showMessageDialog(lista_amiguitos, "Mensaje enviado");
@@ -2614,7 +2659,7 @@ public class Principal extends javax.swing.JFrame {
                     }
                 }
             }
-            
+
         }
     }//GEN-LAST:event_jButton12MouseClicked
 
@@ -2623,12 +2668,12 @@ public class Principal extends javax.swing.JFrame {
         try {
             admin_eliminar.setSize(777, 580);
             admin_eliminar.setLocation(5, 5);
-            
+
             panel_inicio.removeAll();
             panel_inicio.add(admin_eliminar, BorderLayout.CENTER);
             panel_inicio.revalidate();
             panel_inicio.repaint();
-            
+
             DefaultListModel mod = (DefaultListModel) registro.getModel();
             for (Usuario l : listausuarios) {
                 mod.addElement(l.getNickname());
@@ -2637,7 +2682,7 @@ public class Principal extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(registro, "Ocurrio un error");
-            
+
         }
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
@@ -2645,12 +2690,12 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         admin_editar.setSize(777, 580);
         admin_editar.setLocation(5, 5);
-        
+
         panel_inicio.removeAll();
         panel_inicio.add(admin_editar, BorderLayout.CENTER);
         panel_inicio.revalidate();
         panel_inicio.repaint();
-        
+
         cb_global.removeAllItems();
         DefaultComboBoxModel mod = (DefaultComboBoxModel) cb_global.getModel();
         for (Usuario l : listausuarios) {
@@ -2660,7 +2705,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        
+
         try {
             String s = registro.getSelectedValue().toString();
             for (int i = 0; i < listausuarios.size(); i++) {
@@ -2668,17 +2713,17 @@ public class Principal extends javax.swing.JFrame {
                     listausuarios.remove(i);
                 }
             }
-            
+
             JOptionPane.showMessageDialog(registro, "Elimino exitosamente");
             registro.setModel(new DefaultListModel());
             jScrollPane8.setViewportView(registro);
-            
+
             DefaultListModel mod = (DefaultListModel) registro.getModel();
             for (Usuario l : listausuarios) {
                 mod.addElement(l.getNickname());
             }
             registro.setModel(mod);
-            
+
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(registro, "Ocurrio un error");
@@ -2690,7 +2735,7 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         JFileChooser fc = new JFileChooser();
         FileFilter filtro = new FileNameExtensionFilter("Imagenes", "png", "jpg", "jpeg", "gif");
-        
+
         fc.setFileFilter(filtro);
         File archivo;
         int op = fc.showOpenDialog(admin_editar);
@@ -2725,7 +2770,7 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         crear_admin.setSize(777, 580);
         crear_admin.setLocation(5, 5);
-        
+
         panel_inicio.removeAll();
         panel_inicio.add(crear_admin, BorderLayout.CENTER);
         panel_inicio.revalidate();
@@ -2745,9 +2790,9 @@ public class Principal extends javax.swing.JFrame {
                     l.setNacionalidad(cb_nacionalidad_global.getSelectedItem().toString());
                 }
             }
-            
+
             JOptionPane.showMessageDialog(fotodeperfilglobal, "Usuario modificado con exito");
-            
+
         } catch (Exception e) {
             JOptionPane.showMessageDialog(fotodeperfilglobal, "Ocurrio un error");
         }
@@ -2755,6 +2800,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
+
         jd_inicio.setVisible(false);
         panel_inicio.removeAll();
         jd_admin.setVisible(false);
@@ -2766,7 +2812,7 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         panel_agenda.setSize(777, 580);
         panel_agenda.setLocation(5, 5);
-        
+
         panel_inicio.removeAll();
         panel_inicio.add(panel_agenda, BorderLayout.CENTER);
         panel_inicio.revalidate();
@@ -2859,11 +2905,11 @@ public class Principal extends javax.swing.JFrame {
                 // System.out.println("Mes Diciembre");
                 mm = "Diciembre";
                 break;
-            
+
         }
         // System.out.println("Dia" + calendario.getCalendar().get(5));
         int d = calendario.getCalendar().get(5);
-        
+
         Object[] options = {"Agregar tarea",
             "Agregar evento"};
         int n = JOptionPane.showOptionDialog(panel_agenda,
@@ -2877,7 +2923,7 @@ public class Principal extends javax.swing.JFrame {
                 options,
                 options[1]);
         fecha = d + "-" + mm + "-" + a;
-        fechahilo=calendario.getCalendar().get(1)+"/"+calendario.getCalendar().get(2)+"/"+calendario.getCalendar().get(5);
+        fechahilo = calendario.getCalendar().get(1) + "/" + calendario.getCalendar().get(2) + "/" + calendario.getCalendar().get(5);
         //  System.out.println(fecha);
         if (n == 0) {
             tarea.setModal(true);
@@ -2889,48 +2935,57 @@ public class Principal extends javax.swing.JFrame {
             evento.pack();
             evento.setLocationRelativeTo(panel_agenda);
             evento.setVisible(true);
-            
+
         }
-        
+
 
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseClicked
         // TODO add your handling code here:
         try {
-            
+
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
                     System.out.println(l.agenda);
-                     String hora = tf_hora.getText();
-                     String[] tokens  = hora.split(":");
+                    String hora = tf_hora.getText();
+                    String[] tokens = hora.split(":");
                     int menos = Integer.parseInt(tf_minutos.getText());
                     int mins = Integer.parseInt(tokens[1]);
-                    int dif = mins-menos;
-                    fechahilo=fecha+"/"+tokens[0]+"/"+dif;
-                    System.out.println("*********"+fecha);
-                   
-                    
-                    
-                    l.agenda.add(new Tarea(tf_contenido.getText(), ta_notas.getText(),tf_hora.getText(), fecha, tf_titulo.getText(), Integer.parseInt(tf_minutos.getText()),fechahilo));
+                    int dif = mins - menos;
+                    fechahilo = fecha + "/" + tokens[0] + "/" + dif;
+                    System.out.println("*********" + fecha);
+
+                    l.agenda.add(new Tarea(tf_contenido.getText(), ta_notas.getText(), tf_hora.getText(), fecha, tf_titulo.getText(), Integer.parseInt(tf_minutos.getText()), fechahilo));
                     System.out.println("agrego");
                     System.out.println(l.agenda);
-                    
+                    hn.stop();
+                    for (Usuario ll : listausuarios) {
+                        if (ll.getNickname().equals(nick)) {
+                            for (int i = 0; i < ll.getAgenda().size(); i++) {
+                                System.out.println("algo mas por aqui" + ll.agenda.get(i).getFechahilo().toString());
+
+                                hn = new HiloNotificacion(ll.agenda.get(i).getFechahilo().toString());
+                                hn.start();
+
+                            }
+                        }
+                    }
                 }
             }
             JOptionPane.showMessageDialog(evento, "Agrego tarea exitosamente");
-            
+
             tf_titulo.setText("");
             tf_minutos.setText("");
             tf_contenido.setText("");
             ta_notas.setText("");
             evento.setVisible(false);
             cb_tareas.setModel(new javax.swing.DefaultComboBoxModel(new String[]{" "}));
-            
+
             DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_tareas.getModel();
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
-                    
+
                     for (int i = 0; i < l.agenda.size(); i++) {
                         modelo.addElement(l.agenda.get(i).getFecha());
                     }
@@ -2992,36 +3047,48 @@ public class Principal extends javax.swing.JFrame {
     private void jButton19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MouseClicked
         // TODO add your handling code here:
         try {
-            
+
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
                     System.out.println(l.agenda);
                     String hora = tf_inicio.getText();
-                     String[] tokens  = hora.split(":");
+                    String[] tokens = hora.split(":");
                     int menos = Integer.parseInt(tf_minutos_evento.getText());
                     int mins = Integer.parseInt(tokens[1]);
-                    int dif = mins-menos;
-                    fechahilo=fechahilo+"/"+tokens[0]+"/"+dif;
-                    System.out.println("*********"+fechahilo);
-                    l.agenda.add(new Evento(tf_inicio.getText(), tf_fin.getText(), fecha, tf_titulo_evento.getText(), Integer.parseInt(tf_minutos_evento.getText()),fechahilo));
+                    int dif = mins - menos;
+                    fechahilo = fechahilo + "/" + tokens[0] + "/" + dif;
+                    System.out.println("*********" + fechahilo);
+                    l.agenda.add(new Evento(tf_inicio.getText(), tf_fin.getText(), fecha, tf_titulo_evento.getText(), Integer.parseInt(tf_minutos_evento.getText()), fechahilo));
                     System.out.println("agrego");
                     System.out.println(l.agenda);
-                    
+                    // hn.stop();
+                    for (Usuario ll : listausuarios) {
+                        if (ll.getNickname().equals(nick)) {
+                            for (int i = 0; i < ll.getAgenda().size(); i++) {
+                                System.out.println("algo mas por aqui" + ll.agenda.get(i).getFechahilo().toString());
+
+                                hn = new HiloNotificacion(ll.agenda.get(i).getFechahilo().toString());
+                                hn.start();
+
+                            }
+                        }
+                    }
+
                 }
             }
             JOptionPane.showMessageDialog(evento, "Agrego evento exitosamente");
-            
+
             tf_titulo.setText("");
             tf_minutos.setText("");
             tf_inicio.setText("");
             tf_fin.setText("");
-            
+
             cb_eventos.setModel(new javax.swing.DefaultComboBoxModel(new String[]{" "}));
-            
+
             DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_eventos.getModel();
             for (Usuario l : listausuarios) {
                 if (l.getNickname().equals(nick)) {
-                    
+
                     for (int i = 0; i < l.agenda.size(); i++) {
                         modelo.addElement(l.agenda.get(i).getFecha());
                     }
@@ -3039,53 +3106,6 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_finActionPerformed
 
-    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
-        // TODO add your handling code here:
-         JFileChooser fc = new JFileChooser();
-        FileFilter filtro = new FileNameExtensionFilter("Imagenes", "png", "jpg", "jpeg", "gif");
-        
-        fc.setFileFilter(filtro);
-        File archivo;
-//        int op = fc.showOpenDialog(icono1);
-//        if (op == JFileChooser.APPROVE_OPTION) {
-//            archivo = fc.getSelectedFile();
-//            //Redimencionar una imagen
-//            Image img = Toolkit.getDefaultToolkit().createImage(archivo.getPath()).getScaledInstance(200, 200, 0);
-//              if (icono1.getText().isEmpty() == true) {
-//            System.out.println("Vacio");
-//            icono1.setIcon(new ImageIcon(img));
-//        } else if (icono2.getText().isEmpty()) {
-//            icono2.setIcon(new ImageIcon(img));
-//        } else if (icono3.getText().isEmpty()) {
-//            icono3.setIcon(new ImageIcon(img);
-//        }else if (icono4.getText().isEmpty()) {
-//            icono4.setIcon(new ImageIcon(img));
-//        }else if (icono5.getText().isEmpty()) {
-//            icono5.setIcon(new ImageIcon(img));
-//        }else if (icono6.getText().isEmpty()) {
-//            icono6.setIcon(new ImageIcon(img));
-//        }else if (icono7.getText().isEmpty()) {
-//            icono7.setIcon(new ImageIcon(img));
-//        }else if (icono8.getText().isEmpty()) {
-//            icono8.setIcon(new ImageIcon(img));
-//        }else if (icono9.getText().isEmpty()) {
-//            icono9.setIcon(new ImageIcon(img));
-//        }else if (icono10.getText().isEmpty()) {
-//            icono10.setIcon(new ImageIcon(img));
-//        }else if (icono11.getText().isEmpty()) {
-//            icono11.setIcon(new ImageIcon(img));
-//        }else if (icono12.getText().isEmpty()) {
-//            icono12.setIcon(new ImageIcon(img));
-//        }else if (icono13.getText().isEmpty()) {
-//            icono13.setIcon(new ImageIcon(img));
-//        }
-//            
-//           //fotodeperfil.setIcon(new ImageIcon(img));
-//        }
-        
-        
-    }//GEN-LAST:event_jButton6MouseClicked
-
     private void jButton20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton20MouseClicked
         // TODO add your handling code here:
         estado_publicacion = ta_estado.getText();
@@ -3094,9 +3114,9 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseClicked
         // TODO add your handling code here:
-          JFileChooser fc = new JFileChooser();
+        JFileChooser fc = new JFileChooser();
         FileFilter filtro = new FileNameExtensionFilter("Imagenes", "png", "jpg", "jpeg", "gif");
-        
+
         fc.setFileFilter(filtro);
         File archivo;
         int op = fc.showOpenDialog(lb_set_imagen);
@@ -3110,9 +3130,9 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton22MouseClicked
         // TODO add your handling code here:
-         JFileChooser fc = new JFileChooser();
+        JFileChooser fc = new JFileChooser();
         FileFilter filtro = new FileNameExtensionFilter("Imagenes", "png", "jpg", "jpeg", "gif");
-        
+
         fc.setFileFilter(filtro);
         File archivo;
         int op = fc.showOpenDialog(lb_set_video);
@@ -3126,37 +3146,34 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MouseClicked
         // TODO add your handling code here:
-        
+
         imagen = lb_set_imagen.getIcon();
         video = lb_set_video.getIcon();
         texto = ta_set_estado.getText();
-        
-       
-        
-        System.out.println("texto"+texto);
-        Usuario c1=null;
-        Container c = new Container();
+
+        System.out.println("texto" + texto);
+        Usuario c1 = null;
+
         for (Usuario l : listausuarios) {
             if (l.getNickname().equals(nick)) {
-            c1=l;
+                c1 = l;
             }
         }
-       
+
         c1.getPublitexto().add(new Post(imagen, video, texto));
-        
+
 //        lb_set_imagen.setText("");
 //        lb_set_video.setText("");
 //        ta_texto.setText("");
-        
-        c.setLayout(new GridLayout(0,1));
+        c.setLayout(new GridLayout(0, 1));
         for (Usuario l : listausuarios) {
             if (l.getNickname().equals(nick)) {
                 for (Post li : l.getPublitexto()) {
-                   paneles p = li.getK();
-                  // p.ta_estado.setText("hvjhvj");
+                    paneles p = li.getK();
+                    // p.ta_estado.setText("hvjhvj");
                     c.add(p);
                     System.out.println(li);
-                  
+
                 }
             }
         }
@@ -3171,33 +3188,187 @@ public class Principal extends javax.swing.JFrame {
                 for (int i = 0; i < l.mensajesR.size(); i++) {
                     if (l.mensajesR.get(i).getEmisor().equals(selec)) {
                         l.mensajesR.remove(i);
-                        
+
                     }
                 }
             }
         }
-         lista_mensajes.setModel(new DefaultListModel());
+        lista_mensajes.setModel(new DefaultListModel());
         lista_mensajes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lista_mensajesMouseClicked(evt);
             }
         });
-          DefaultListModel mod = (DefaultListModel) lista_mensajes.getModel();
-            for (Usuario pp : listausuarios) {
-                if (pp.getNickname().equals(nick)) {
-                    for (int i = 0; i < pp.mensajesR.size(); i++) {
-                        mod.addElement(pp.mensajesR.get(i));
-                    }
+        DefaultListModel mod = (DefaultListModel) lista_mensajes.getModel();
+        for (Usuario pp : listausuarios) {
+            if (pp.getNickname().equals(nick)) {
+                for (int i = 0; i < pp.mensajesR.size(); i++) {
+                    mod.addElement(pp.mensajesR.get(i));
+                }
 //                for (Object p : pp.mensajesR) {
 //                    mod.addElement(p);
 //                }
-                }
             }
+        }
     }//GEN-LAST:event_eliminar_mensajeActionPerformed
 
     private void jButton17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17MouseEntered
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        // TODO add your handling code here:
+        JFileChooser fc = new JFileChooser();
+        FileFilter filtro = new FileNameExtensionFilter("Imagenes", "png", "jpg", "jpeg", "gif");
+
+        fc.setFileFilter(filtro);
+        File archivo;
+        int op = fc.showOpenDialog(foto_1);
+        if (op == JFileChooser.APPROVE_OPTION) {
+            archivo = fc.getSelectedFile();
+            //Redimencionar una imagen
+            Image img = Toolkit.getDefaultToolkit().createImage(archivo.getPath()).getScaledInstance(100, 100, 0);
+            if (foto_1.getText().isEmpty() == true) {
+                foto_1.setIcon(new ImageIcon(img));
+                foto_1.setText(".");
+            } else if (foto_2.getText().isEmpty() == true) {
+                foto_2.setIcon(new ImageIcon(img));
+                foto_2.setText(".");
+            } else if (foto_3.getText().isEmpty() == true) {
+                foto_3.setIcon(new ImageIcon(img));
+                foto_3.setText(".");
+            } else if (foto_4.getText().isEmpty() == true) {
+                foto_4.setIcon(new ImageIcon(img));
+                foto_4.setText(".");
+            } else if (foto_5.getText().isEmpty() == true) {
+                foto_5.setIcon(new ImageIcon(img));
+                foto_5.setText(".");
+            } else if (foto_6.getText().isEmpty() == true) {
+                foto_6.setIcon(new ImageIcon(img));
+                foto_6.setText(".");
+            } else if (foto_7.getText().isEmpty() == true) {
+                foto_7.setIcon(new ImageIcon(img));
+                foto_7.setText(".");
+            } else if (foto_8.getText().isEmpty() == true) {
+                foto_8.setIcon(new ImageIcon(img));
+                foto_8.setText(".");
+            } else if (foto_9.getText().isEmpty() == true) {
+                foto_9.setIcon(new ImageIcon(img));
+                foto_9.setText(".");
+            } else if (foto_10.getText().isEmpty() == true) {
+                foto_10.setIcon(new ImageIcon(img));
+                foto_10.setText(".");
+            }
+
+        }
+    }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
+        // TODO add your handling code here:
+
+        recuerdos.setSize(777, 580);
+        recuerdos.setLocation(5, 5);
+
+        panel_inicio.removeAll();
+        panel_inicio.add(recuerdos, BorderLayout.CENTER);
+        panel_inicio.revalidate();
+        panel_inicio.repaint();
+
+        fotos.setModal(true);
+        fotos.pack();
+        fotos.setLocationRelativeTo(this);
+        fotos.setVisible(true);
+    }//GEN-LAST:event_jLabel55MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        // TODO add your handling code here:
+        titulos = tf_titulo_album.getText();
+//        foto1 = foto_1.getIcon();
+//        foto2 = foto_2.getIcon();
+//        foto3 = foto_3.getIcon();
+//        foto4 = foto_4.getIcon();
+//        foto5 = foto_5.getIcon();
+//        foto6 = foto_6.getIcon();
+//        foto7 = foto_7.getIcon();
+//        foto8 = foto_8.getIcon();
+//        foto9 = foto_9.getIcon();
+//        foto10 = foto_10.getIcon();
+
+        Usuario c1 = null;
+
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                c1 = l;
+            }
+        }
+
+        c1.getRecuerdos().add(new fotos(foto_1.getIcon(), foto_2.getIcon(), foto_3.getIcon(), foto_4.getIcon(), foto_5.getIcon(), foto_6.getIcon(), foto_7.getIcon(), foto_8.getIcon(), foto_9.getIcon(), foto_10.getIcon(), titulos));
+
+        c.setLayout(new GridLayout(0, 1));
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                for (fotos li : l.getRecuerdos()) {
+                    Album p = li.getAl();
+
+                    c.add(p);
+                    System.out.println(li);
+
+                }
+            }
+        }
+        scroll.getViewport().add(c);
+        foto_1.setText("");
+        foto_1.setIcon(null);
+        foto_2.setText("");
+        foto_2.setIcon(null);
+        foto_3.setText("");
+        foto_3.setIcon(null);
+        foto_4.setText("");
+        foto_4.setIcon(null);
+        foto_5.setText("");
+        foto_5.setIcon(null);
+        foto_6.setText("");
+        foto_6.setIcon(null);
+        foto_7.setText("");
+        foto_7.setIcon(null);
+        foto_8.setText("");
+        foto_8.setIcon(null);
+        foto_9.setText("");
+        foto_9.setIcon(null);
+        foto_10.setText("");
+        foto_10.setIcon(null);
+        tf_titulo_album.setText("");
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseClicked
+        // TODO add your handling code here:
+        
+        
+        c.setLayout(new GridLayout(0, 1));
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                for (int i = 0; i < l.recuerdos.size(); i++) {
+                    c.add(l.recuerdos.get(i).getAl());
+                }
+            }
+        }
+        scroll.getViewport().add(c);
+
+        //        c.setLayout(new GridLayout(0, 1));
+        //        for (Usuario l : listausuarios) {
+            //            if (l.getNickname().equals(nick)) {
+                //                for (fotos li : l.getRecuerdos()) {
+                    //                    Album p = li.getAl();
+                    //
+                    //                    c.add(p);
+                    //                    System.out.println(li);
+                    //
+                    //                }
+                //            }
+            //        }
+        //        scroll.getViewport().add(c);
+
+    }//GEN-LAST:event_jButton24MouseClicked
 
     /**
      * @param args the command line arguments
@@ -3256,10 +3427,21 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem eliminar_mensaje;
     private javax.swing.JDialog estado;
     private javax.swing.JDialog evento;
+    public static javax.swing.JLabel foto_1;
+    public static javax.swing.JLabel foto_10;
+    public static javax.swing.JLabel foto_2;
+    public static javax.swing.JLabel foto_3;
+    public static javax.swing.JLabel foto_4;
+    public static javax.swing.JLabel foto_5;
+    public static javax.swing.JLabel foto_6;
+    public static javax.swing.JLabel foto_7;
+    public static javax.swing.JLabel foto_8;
+    public static javax.swing.JLabel foto_9;
     private javax.swing.JLabel foto_muro;
     private javax.swing.JDialog foto_perfil;
     private javax.swing.JLabel fotodeperfil;
     private javax.swing.JLabel fotodeperfilglobal;
+    private javax.swing.JDialog fotos;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -3276,6 +3458,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -3336,6 +3519,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
@@ -3366,6 +3550,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel83;
     private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
@@ -3386,17 +3572,12 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane12;
@@ -3413,7 +3594,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JDialog jd_admin;
     private javax.swing.JDialog jd_inicio;
-    private javax.swing.JScrollPane js;
+    public static javax.swing.JScrollPane js;
     public static javax.swing.JLabel label_u;
     private javax.swing.JLabel lb_nacionalidad_muro;
     private javax.swing.JLabel lb_nickname_muro;
@@ -3440,7 +3621,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPasswordField pf_password_nuevo_admin;
     private javax.swing.JPopupMenu pop_menu;
     private javax.swing.JDialog publicacion;
+    private javax.swing.JPanel recuerdos;
     private javax.swing.JList registro;
+    private javax.swing.JScrollPane scroll;
     private javax.swing.JTextArea ta_cuerpo;
     private javax.swing.JTextArea ta_estado;
     private javax.swing.JTextArea ta_eventos;
@@ -3471,6 +3654,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_nombre_nuevo_admin;
     private javax.swing.JTextField tf_para;
     private javax.swing.JTextField tf_titulo;
+    private javax.swing.JTextField tf_titulo_album;
     private javax.swing.JTextField tf_titulo_evento;
     // End of variables declaration//GEN-END:variables
 
@@ -3484,14 +3668,28 @@ public class Principal extends javax.swing.JFrame {
     int leido;
     Usuario login;
     String estado_publicacion;
+    Container c = new Container();
     String nick1;
     String fechahilo;
     Icon imagen;
     Icon video;
     String texto;
+
     String emisor;
     String receptor;
     String fecha;
     ArrayList<Usuario> listausuarios = new ArrayList();
     HiloMp3 m = new HiloMp3();
+    HiloNotificacion hn;
+    Icon foto1;
+    Icon foto2;
+    Icon foto3;
+    Icon foto4;
+    Icon foto5;
+    Icon foto6;
+    Icon foto7;
+    Icon foto8;
+    Icon foto9;
+    Icon foto10;
+    String titulos;
 }

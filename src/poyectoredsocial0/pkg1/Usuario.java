@@ -30,6 +30,7 @@ public class Usuario implements Serializable{
     ArrayList <Post> publitexto= new ArrayList();
     ArrayList <Post> publiimagen= new ArrayList();
     ArrayList <Post> publivideo= new ArrayList();
+    ArrayList <fotos> recuerdos = new ArrayList(); 
     
     private static final long SerialVersionUID = 001L;
 
@@ -173,6 +174,14 @@ public class Usuario implements Serializable{
 
     public void setPublivideo(ArrayList<Post> publivideo) {
         this.publivideo = publivideo;
+    }
+
+    public ArrayList<fotos> getRecuerdos() {
+        return recuerdos;
+    }
+
+    public void setRecuerdos(ArrayList<fotos> recuerdos) {
+        this.recuerdos = recuerdos;
     }
     
     
