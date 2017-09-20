@@ -190,6 +190,7 @@ public class Principal extends javax.swing.JFrame {
         jButton14 = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
+        jLabel95 = new javax.swing.JLabel();
         crear_admin = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         tf_nombre_nuevo_admin = new javax.swing.JTextField();
@@ -216,6 +217,7 @@ public class Principal extends javax.swing.JFrame {
         ta_tareas = new javax.swing.JTextArea();
         jScrollPane14 = new javax.swing.JScrollPane();
         ta_eventos = new javax.swing.JTextArea();
+        jLabel96 = new javax.swing.JLabel();
         evento = new javax.swing.JDialog();
         jLabel65 = new javax.swing.JLabel();
         tf_titulo_evento = new javax.swing.JTextField();
@@ -448,16 +450,18 @@ public class Principal extends javax.swing.JFrame {
         panel_inicio.setLayout(panel_inicioLayout);
         panel_inicioLayout.setHorizontalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_inicioLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 947, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_inicioLayout.createSequentialGroup()
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 909, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
         panel_inicioLayout.setVerticalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel58, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 590, Short.MAX_VALUE)
+            .addGroup(panel_inicioLayout.createSequentialGroup()
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 636, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jd_inicio.getContentPane().add(panel_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 790, 590));
+        jd_inicio.getContentPane().add(panel_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 880, 610));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
         jd_inicio.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1380, 670));
@@ -680,7 +684,7 @@ public class Principal extends javax.swing.JFrame {
         panel_mimuro1.add(panel_mimuro, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 781, -1, -1));
 
         js.setPreferredSize(new java.awt.Dimension(604, 500));
-        panel_mimuro1.add(js, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 255, 709, -1));
+        panel_mimuro1.add(js, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 255, 709, 330));
 
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 255)));
 
@@ -739,29 +743,27 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addGap(0, 0, Short.MAX_VALUE)
-                            .addComponent(jLabel37)
-                            .addGap(60, 60, 60))
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addComponent(jLabel36)
-                            .addGap(98, 98, 98)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel34)
-                        .addGap(83, 83, 83)))
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addComponent(lb_nacionalidad_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(156, 156, 156))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lb_nickname_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel8Layout.createSequentialGroup()
                                 .addComponent(lb_nombre_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(129, 129, 129))))
+                        .addGap(129, 129, 129))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel37)
+                                .addGap(60, 60, 60))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(jLabel36)
+                                .addGap(98, 98, 98)))
+                        .addComponent(lb_nacionalidad_muro, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(276, 276, 276))))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -796,7 +798,7 @@ public class Principal extends javax.swing.JFrame {
         panel_mimuro1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 6, 709, -1));
 
         jLabel92.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
-        panel_mimuro1.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(-380, -60, 1240, 920));
+        panel_mimuro1.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(-380, -60, 1370, 930));
 
         jLabel89.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
 
@@ -809,7 +811,7 @@ public class Principal extends javax.swing.JFrame {
         panel_agregar.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 540, 430));
 
         jLabel16.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel16.setForeground(new java.awt.Color(51, 255, 0));
         jLabel16.setText("USUARIOS DISPONIBLES");
         panel_agregar.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 470, 90));
 
@@ -1135,7 +1137,7 @@ public class Principal extends javax.swing.JFrame {
         admin_editar.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, -1, -1));
 
         fotodeperfilglobal.setBackground(new java.awt.Color(255, 255, 204));
-        admin_editar.add(fotodeperfilglobal, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, 200, 200));
+        admin_editar.add(fotodeperfilglobal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 200, 200));
 
         jButton14.setText("SELECIONAR IMAGEN");
         jButton14.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1156,6 +1158,9 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         admin_editar.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, 210, 40));
+
+        jLabel95.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        admin_editar.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -60, 1180, 570));
 
         crear_admin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1219,15 +1224,19 @@ public class Principal extends javax.swing.JFrame {
         jLabel50.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
         crear_admin.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(-400, -40, 1220, 630));
 
+        panel_agenda.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         calendario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 calendarioMouseClicked(evt);
             }
         });
+        panel_agenda.add(calendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 68, 707, -1));
 
         jLabel54.setFont(new java.awt.Font("Marker Felt", 1, 36)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel54.setForeground(new java.awt.Color(0, 255, 0));
         jLabel54.setText("CALENDARIO/AGENDA");
+        panel_agenda.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 16, -1, -1));
 
         jButton16.setText("AGENDAR");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -1235,92 +1244,44 @@ public class Principal extends javax.swing.JFrame {
                 jButton16ActionPerformed(evt);
             }
         });
+        panel_agenda.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 305, 135, -1));
 
         cb_tareas.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cb_tareasItemStateChanged(evt);
             }
         });
+        panel_agenda.add(cb_tareas, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 341, 259, -1));
 
         cb_eventos.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cb_eventosItemStateChanged(evt);
             }
         });
+        panel_agenda.add(cb_eventos, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 341, 300, -1));
 
         jLabel56.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel56.setText("TAREAS");
+        panel_agenda.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 314, -1, -1));
 
         jLabel57.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel57.setText("Eventos");
+        panel_agenda.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(571, 315, -1, -1));
 
         ta_tareas.setColumns(20);
         ta_tareas.setRows(5);
         jScrollPane13.setViewportView(ta_tareas);
 
+        panel_agenda.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 386, 373, 177));
+
         ta_eventos.setColumns(20);
         ta_eventos.setRows(5);
         jScrollPane14.setViewportView(ta_eventos);
 
-        javax.swing.GroupLayout panel_agendaLayout = new javax.swing.GroupLayout(panel_agenda);
-        panel_agenda.setLayout(panel_agendaLayout);
-        panel_agendaLayout.setHorizontalGroup(
-            panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_agendaLayout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addComponent(jLabel56)
-                .addGap(108, 108, 108)
-                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107)
-                .addComponent(jLabel57)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_agendaLayout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
-                .addGroup(panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_agendaLayout.createSequentialGroup()
-                        .addComponent(jLabel54)
-                        .addGap(213, 213, 213))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_agendaLayout.createSequentialGroup()
-                        .addComponent(calendario, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_agendaLayout.createSequentialGroup()
-                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))))
-            .addGroup(panel_agendaLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(cb_tareas, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cb_eventos, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
-        );
-        panel_agendaLayout.setVerticalGroup(
-            panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_agendaLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel54)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(calendario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_agendaLayout.createSequentialGroup()
-                        .addGroup(panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel56))
-                        .addGap(7, 7, 7))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_agendaLayout.createSequentialGroup()
-                        .addComponent(jLabel57)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb_tareas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cb_eventos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_agendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
-                    .addComponent(jScrollPane14))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
+        panel_agenda.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 386, 346, 177));
+
+        jLabel96.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        panel_agenda.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -280, -1, 1140));
 
         jLabel65.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel65.setText("AGREGAR EVENTO");
@@ -1787,6 +1748,7 @@ public class Principal extends javax.swing.JFrame {
         muro_general.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel88.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(0, 255, 0));
         jLabel88.setText("MURO GENERAL");
         muro_general.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(244, 15, 319, -1));
         muro_general.add(scroll_general, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 80, 661, 470));
@@ -3155,7 +3117,9 @@ public class Principal extends javax.swing.JFrame {
     private void jButton21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MouseClicked
         // TODO add your handling code here:
 
-        imagen = lb_set_imagen.getIcon();
+        try {
+         
+               imagen = lb_set_imagen.getIcon();
         video = lb_set_video.getIcon();
         texto = ta_set_estado.getText();
 
@@ -3180,13 +3144,16 @@ public class Principal extends javax.swing.JFrame {
                     paneles p = li.getK();
                  
                     c.add(p);
-                    System.out.println(li);
+                    System.out.println(li.getK());
 
                 }
             }
         }
         
-        scroll_general.getViewport().add(c);
+        js.getViewport().add(c);
+      // scroll_general.getViewport().add(c);
+        
+        
           // js.getViewport().add(c);
 //        //---------------------------------------
 //        c.setLayout(new GridLayout(0, 1));
@@ -3204,6 +3171,11 @@ public class Principal extends javax.swing.JFrame {
 //        
 //        scroll_general.getViewport().add(c);
 //      js.getViewport().add(c);
+        JOptionPane.showMessageDialog(publicacion, "Publico exitosamente");
+        } catch (Exception e) {
+            e.printStackTrace();
+                    JOptionPane.showMessageDialog(publicacion, "Ocurrio un error");
+        }
     }//GEN-LAST:event_jButton21MouseClicked
 
     private void eliminar_mensajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_mensajeActionPerformed
@@ -3409,7 +3381,31 @@ public class Principal extends javax.swing.JFrame {
         panel_inicio.add(muro_general, BorderLayout.CENTER);
         panel_inicio.revalidate();
         panel_inicio.repaint();
-        
+      //  scroll_general.getViewport().remove(c2);
+             Usuario c1 = null;
+
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                c1 = l;
+            }
+        }
+
+        c1.getPublitexto().add(new Post(imagen, video, texto,c1));
+
+        c2.setLayout(new GridLayout(0, 1));
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                for (Post li : l.getPublitexto()) {
+                    paneles p = li.getK();
+                 
+                    c2.add(p);
+                    System.out.println(li);
+       
+                }
+            }
+        }
+        scroll_general.getViewport().add(c2);
+ 
 //         Usuario c1 = null;
 //
 //        for (Usuario l : listausuarios) {
@@ -3649,6 +3645,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -3766,6 +3764,7 @@ public class Principal extends javax.swing.JFrame {
     Usuario login;
     String estado_publicacion;
     Container c = new Container();
+     Container c2 = new Container();
     String nick1;
     String fechahilo;
     Icon imagen;
