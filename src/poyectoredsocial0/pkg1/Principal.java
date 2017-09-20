@@ -65,8 +65,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
         panel_inicio = new javax.swing.JPanel();
         jLabel58 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -111,6 +113,7 @@ public class Principal extends javax.swing.JFrame {
         lb_nombre_muro = new javax.swing.JLabel();
         lb_nickname_muro = new javax.swing.JLabel();
         lb_nacionalidad_muro = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         panel_agregar = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -279,6 +282,11 @@ public class Principal extends javax.swing.JFrame {
         scroll = new javax.swing.JScrollPane();
         jLabel87 = new javax.swing.JLabel();
         jButton24 = new javax.swing.JButton();
+        jLabel93 = new javax.swing.JLabel();
+        muro_general = new javax.swing.JPanel();
+        jLabel88 = new javax.swing.JLabel();
+        scroll_general = new javax.swing.JScrollPane();
+        jLabel94 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         tf_nickname_login = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -329,7 +337,7 @@ public class Principal extends javax.swing.JFrame {
                 jLabel12MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 150, -1));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 150, -1));
 
         jLabel13.setFont(new java.awt.Font("Marker Felt", 3, 30)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 0));
@@ -344,7 +352,7 @@ public class Principal extends javax.swing.JFrame {
                 jLabel13KeyPressed(evt);
             }
         });
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 180, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 180, -1));
 
         jLabel17.setFont(new java.awt.Font("Marker Felt", 3, 30)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 0));
@@ -354,7 +362,7 @@ public class Principal extends javax.swing.JFrame {
                 jLabel17MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 250, -1));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 250, -1));
 
         jLabel22.setFont(new java.awt.Font("Marker Felt", 3, 30)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 0));
@@ -364,7 +372,7 @@ public class Principal extends javax.swing.JFrame {
                 jLabel22MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 100, -1));
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 100, -1));
 
         jLabel31.setFont(new java.awt.Font("Marker Felt", 3, 30)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 0));
@@ -374,7 +382,7 @@ public class Principal extends javax.swing.JFrame {
                 jLabel31MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 150, -1));
+        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 150, -1));
 
         jLabel52.setFont(new java.awt.Font("Marker Felt", 3, 30)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(255, 255, 0));
@@ -384,7 +392,7 @@ public class Principal extends javax.swing.JFrame {
                 jLabel52MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 90, -1));
+        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 550, 90, -1));
 
         jLabel55.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 0));
@@ -394,7 +402,17 @@ public class Principal extends javax.swing.JFrame {
                 jLabel55MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 170, 30));
+        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, 170, 30));
+
+        jLabel91.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
+        jLabel91.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel91.setText("Muro gerenal");
+        jLabel91.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel91MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 160, 30));
 
         jLabel32.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
         jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -20, 330, 610));
@@ -408,6 +426,16 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 150, -1));
+
+        jLabel90.setFont(new java.awt.Font("Marker Felt", 1, 30)); // NOI18N
+        jLabel90.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel90.setText("Album de fotos");
+        jLabel90.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel90MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 170, 30));
 
         jd_inicio.getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 310, 590));
 
@@ -646,10 +674,13 @@ public class Principal extends javax.swing.JFrame {
         );
 
         panel_mimuro1.setBackground(new java.awt.Color(153, 102, 0));
+        panel_mimuro1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panel_mimuro.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panel_mimuro1.add(panel_mimuro, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 781, -1, -1));
 
         js.setPreferredSize(new java.awt.Dimension(604, 500));
+        panel_mimuro1.add(js, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 255, 709, -1));
 
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 255)));
 
@@ -762,32 +793,10 @@ public class Principal extends javax.swing.JFrame {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
-        javax.swing.GroupLayout panel_mimuro1Layout = new javax.swing.GroupLayout(panel_mimuro1);
-        panel_mimuro1.setLayout(panel_mimuro1Layout);
-        panel_mimuro1Layout.setHorizontalGroup(
-            panel_mimuro1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_mimuro1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(panel_mimuro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(panel_mimuro1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(panel_mimuro1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(js, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 49, Short.MAX_VALUE))
-        );
-        panel_mimuro1Layout.setVerticalGroup(
-            panel_mimuro1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_mimuro1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(js, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(panel_mimuro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        panel_mimuro1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 6, 709, -1));
+
+        jLabel92.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        panel_mimuro1.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(-380, -60, 1240, 920));
 
         jLabel89.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/pegatinas-coches-motos-sticker-bomb-xl.jpg")); // NOI18N
 
@@ -800,7 +809,7 @@ public class Principal extends javax.swing.JFrame {
         panel_agregar.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 540, 430));
 
         jLabel16.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel16.setForeground(new java.awt.Color(51, 255, 0));
         jLabel16.setText("USUARIOS DISPONIBLES");
         panel_agregar.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 470, 90));
 
@@ -864,8 +873,8 @@ public class Principal extends javax.swing.JFrame {
         jButton10.setText("Eliminar Amigo");
         panel_amigos.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 150, 40));
 
-        jLabel21.setFont(new java.awt.Font("Marker Felt", 3, 36)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel21.setFont(new java.awt.Font("Marker Felt", 3, 48)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(51, 255, 0));
         jLabel21.setText("Amigos");
         panel_amigos.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 106, -1));
 
@@ -1750,8 +1759,13 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        recuerdos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        recuerdos.add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 83, 730, 499));
+
         jLabel87.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(51, 255, 0));
         jLabel87.setText("MIS RECUERDOS");
+        recuerdos.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 18, -1, -1));
 
         jButton24.setText("Cargar ");
         jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1759,34 +1773,22 @@ public class Principal extends javax.swing.JFrame {
                 jButton24MouseClicked(evt);
             }
         });
+        recuerdos.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 18, -1, -1));
 
-        javax.swing.GroupLayout recuerdosLayout = new javax.swing.GroupLayout(recuerdos);
-        recuerdos.setLayout(recuerdosLayout);
-        recuerdosLayout.setHorizontalGroup(
-            recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(recuerdosLayout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
-                .addGroup(recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recuerdosLayout.createSequentialGroup()
-                        .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recuerdosLayout.createSequentialGroup()
-                        .addComponent(jLabel87)
-                        .addGap(72, 72, 72)
-                        .addComponent(jButton24)
-                        .addGap(53, 53, 53))))
-        );
-        recuerdosLayout.setVerticalGroup(
-            recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recuerdosLayout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
-                .addGroup(recuerdosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel87)
-                    .addComponent(jButton24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 499, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
+        jLabel93.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        recuerdos.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(-400, -90, 1270, 740));
+
+        muro_general.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel88.setFont(new java.awt.Font("Marker Felt", 1, 48)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel88.setText("MURO GENERAL");
+        muro_general.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(244, 15, 319, -1));
+        muro_general.add(scroll_general, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 80, 661, 470));
+
+        jLabel94.setIcon(new javax.swing.ImageIcon("/Users/jeansoto/Downloads/f4884cccb51db18a7bd4ddf6704b4211.jpg")); // NOI18N
+        jLabel94.setToolTipText("");
+        muro_general.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -20, 1280, 640));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -3160,7 +3162,7 @@ public class Principal extends javax.swing.JFrame {
             }
         }
 
-        c1.getPublitexto().add(new Post(imagen, video, texto));
+        c1.getPublitexto().add(new Post(imagen, video, texto,c1));
 
 //        lb_set_imagen.setText("");
 //        lb_set_video.setText("");
@@ -3177,6 +3179,7 @@ public class Principal extends javax.swing.JFrame {
                 }
             }
         }
+        scroll_general.getViewport().add(c);
         js.getViewport().add(c);
     }//GEN-LAST:event_jButton21MouseClicked
 
@@ -3370,6 +3373,51 @@ public class Principal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton24MouseClicked
 
+    private void jLabel90MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel90MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel90MouseClicked
+
+    private void jLabel91MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel91MouseClicked
+        // TODO add your handling code here:
+        muro_general.setSize(777, 580);
+        muro_general.setLocation(5, 5);
+
+        panel_inicio.removeAll();
+        panel_inicio.add(muro_general, BorderLayout.CENTER);
+        panel_inicio.revalidate();
+        panel_inicio.repaint();
+        
+         Usuario c1 = null;
+
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                c1 = l;
+            }
+        }
+
+        c1.getPublitexto().add(new Post(imagen, video, texto,c1));
+
+//        lb_set_imagen.setText("");
+//        lb_set_video.setText("");
+//        ta_texto.setText("");
+        c.setLayout(new GridLayout(0, 1));
+        for (Usuario l : listausuarios) {
+            if (l.getNickname().equals(nick)) {
+                for (Post li : l.getPublitexto()) {
+                    paneles p = li.getK();
+                    // p.ta_estado.setText("hvjhvj");
+                    c.add(p);
+                    System.out.println(li);
+
+                }
+            }
+        }
+        scroll_general.getViewport().add(c);
+        //js.getViewport().add(c);
+        
+        
+    }//GEN-LAST:event_jLabel91MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -3552,8 +3600,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -3605,6 +3659,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JList lista_mensajes;
     private javax.swing.JMenu menu_admin;
     private javax.swing.JPopupMenu menu_pop;
+    private javax.swing.JPanel muro_general;
     private javax.swing.JPanel panel_agenda;
     private javax.swing.JPanel panel_agregar;
     private javax.swing.JPanel panel_amigos;
@@ -3624,6 +3679,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel recuerdos;
     private javax.swing.JList registro;
     private javax.swing.JScrollPane scroll;
+    private javax.swing.JScrollPane scroll_general;
     private javax.swing.JTextArea ta_cuerpo;
     private javax.swing.JTextArea ta_estado;
     private javax.swing.JTextArea ta_eventos;

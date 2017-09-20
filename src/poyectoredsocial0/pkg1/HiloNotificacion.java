@@ -100,6 +100,7 @@ public class HiloNotificacion extends Thread{
                                      if (new Date().getMinutes()==Integer.parseInt((String)minutes)) {
                                          System.out.println("Deberia");
                                          JOptionPane.showMessageDialog(p.js, "Recordatorio de agenda!");
+                                         break;
                                      }
                                 }
                             }

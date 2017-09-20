@@ -26,13 +26,15 @@ private static final long SerialVersionUID = 001L;
 
 
 
-    public Post(Icon imagen, Icon video, String texto) {
+    public Post(Icon imagen, Icon video, String texto, Usuario u) {
         this.imagen = imagen;
         this.video = video;
         this.texto = texto;
      paneles.ta_estado.setText(texto);
       paneles.lb_imagen.setIcon(imagen);
       paneles.lb_video.setIcon(video);
+      paneles.nombre_sujeto.setText(u.getNickname());
+      paneles.foto_sujeto.setIcon(u.getFotografia());
     }
  
 
